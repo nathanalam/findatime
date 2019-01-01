@@ -1,0 +1,39 @@
+@import "../node_modules/foundation-sites/assets/foundation.scss";
+
+$foundation-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+.hidden {
+  display: none;
+}
+
+#interactions {
+  @extend .flex-container;
+  @extend .align-spaced;
+  #date {
+    max-width: 50%;
+  }
+}
+
+#week {
+  height: 100%;
+  @extend .flex-container;
+  @extend .align-center;
+  .dateContainer {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+header {
+  text-align: center;
+
+}
+.dateContainer {
+  display: inline-block;
+}
