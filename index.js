@@ -1,12 +1,15 @@
 var express = require("express");
 var app = express();
 
+console.log("Am I wrong?");
+
 var path = __dirname;
 
 app.use(express.static('public'));
 
 app.get("/", function(req, res) {
-  res.sendFile(path + "/index.html");
+  console.log("Sending /public/about.html");
+  res.sendFile(path + "/public/about.html");
 })
 
 console.log("Listening on http://localhost:3000");
