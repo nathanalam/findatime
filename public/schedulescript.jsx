@@ -55,11 +55,11 @@ function dateToString(date) {
 class Time extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {count: this.props.count, toggle: false}
+    this.state = {count: this.props.count, toggle: false, class: "time off"}
   }
   render() {
-    return <div className="time">
-      <p onClick={() => this.toggle()}>
+    return <div onClick={() => this.toggle()} className={this.state.class}>
+      <p>
       {this.props.string + " - " + this.state.count}</p>
     </div>
   }
@@ -83,7 +83,11 @@ class Time extends React.Component {
       }
     }
     console.log(dates);
-    this.setState({count: newCount, toggle: !this.state.toggle});
+    if(this.state.toggle) {
+      this.setState({count: newCount, toggle: !this.state.toggle, class: "time off"});
+    } else {
+      this.setState({count: newCount, toggle: !this.state.toggle, class: "time on"});
+    }
   }
 }
 
@@ -100,7 +104,9 @@ class Day extends React.Component {
       {dateToString(this.props.date)}
       <button onClick={() => this.props.removeFunct(this.props.index)}>
       Remove</button>
-      {this.state.times}
+      <div className="list-group list-group-flush">
+        {this.state.times}
+      </div>
     </div>;
   }
   getTimeArray() {

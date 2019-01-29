@@ -14,9 +14,6 @@ button {
 
 header {
   text-align: center;
-  #title {
-    
-  }
 }
 
 main {
@@ -50,13 +47,31 @@ main {
   }
   #week {
     overflow-y: scroll; 
+    overflow-x: scroll;
+    white-space: nowrap;
     height:400px;
     border-radius: 1%;
     border: 2px solid black;
   
     .dateContainer {
-      margin-left: 1%;
-      margin-right: 1%;
+      @extend .card;
+      margin-left: 0;
+      margin-right: 0;
+      display: inline-block;
+      .dateHead {
+        @extend .card-header;
+      }
+      button {
+        @extend .btn-danger;
+        width: 100%;
+      }
+      .time {
+        @extend .list-group-item;
+        cursor: pointer;
+      }
+      .on {
+        background: green;
+      }
     }
   }
 
