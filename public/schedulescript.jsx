@@ -98,9 +98,9 @@ class Day extends React.Component {
   render() {
     return <div className="dateContainer">
       {dateToString(this.props.date)}
-      {this.state.times}
       <button onClick={() => this.props.removeFunct(this.props.index)}>
       Remove</button>
+      {this.state.times}
     </div>;
   }
   getTimeArray() {
@@ -141,23 +141,27 @@ class Week extends React.Component {
   render() {
     return <div id="schedule">
       <div id="interactions">
-        <div className="prepend">
-          <button onClick={this.addDay}>Add date</button>
-        </div>
-        <input type="date" id="date"></input>
-        <div className="append">
-          <button>Submit</button>
-          <button onClick={() => {
-            if(this.state.moreOptions) {
-              this.setState({value: this.state.value, moreOptions: false});
-              document.getElementById('more-options').className = "hidden";
+        <div className="mainInteractions">
+          <div className="prepend">
+            <button onClick={this.addDay}>Add date</button>
+          </div>
+          <input type="date" id="date"></input>  
+          <div className="append">
+            <button>Submit</button>
+            <button onClick={() => {
+              if(this.state.moreOptions) {
+                this.setState({value: this.state.value, moreOptions: false});
+                document.getElementById('more-options').className = "hidden";
+                return;
+              }
+              this.setState({value: this.state.value, moreOptions: true});
+              document.getElementById('more-options').className = "";
               return;
-            }
-            this.setState({value: this.state.value, moreOptions: true});
-            document.getElementById('more-options').className = "";
-            return;
-          }}>More options</button>
-          <div className="hidden" id="more-options">
+            }}>More options</button>
+          </div>
+          
+        </div>
+        <div className="hidden" id="more-options">
             Begin at:
             <input type="number" id="min"></input>
             End at:
@@ -165,7 +169,6 @@ class Week extends React.Component {
             Interval (hours):
             <input type="number" id="interval"></input>
           </div>
-        </div>
         
       </div>
       <div id="week">

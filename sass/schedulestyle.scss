@@ -1,8 +1,16 @@
 @import "../bootstrap/css/bootstrap";
 
-body {
-
+button {
+  @extend .btn;
 }
+
+.dateContainer {
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
+
 
 header {
   text-align: center;
@@ -15,35 +23,41 @@ main {
   padding: 3em;
 }
 
-.hidden {
-  display: none;
-}
 
-#interactions {
-  @extend .input-group;
-  button {
-    @extend .btn-secondary;
+#schedule {
+  width: 90%;
+  margin: 0 auto;
+  #interactions {
+    @extend .input-group;
+    button {
+      @extend .btn-light;
+    }
+    .mainInteractions {
+      @extend .row;
+      @extend .input-group;
+      margin-left: 0;
+      margin-right: 0;
+      .prepend {
+        @extend .input-group-prepend;
+      }
+      input {
+        @extend .form-control;
+      }
+      .append {
+        @extend .input-group-append;
+      }
+    }
   }
-  .prepend {
-    @extend .input-group-prepend;
+  #week {
+    overflow-y: scroll; 
+    height:400px;
+    border-radius: 1%;
+    border: 2px solid black;
+  
+    .dateContainer {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
   }
-  .append {
-    @extend .input-group-append;
-  }
-}
 
-button {
-  @extend .btn;
-}
-
-#week {
-  height: 100%;
-
-  .dateContainer {
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-}
-.dateContainer {
-  display: inline-block;
 }

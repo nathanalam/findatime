@@ -589,7 +589,7 @@ pre code {
   margin-left: auto;
 }
 
-.row {
+.row, #schedule #interactions .mainInteractions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2106,7 +2106,7 @@ pre code {
   border: 0;
 }
 
-.form-control {
+.form-control, #schedule #interactions .mainInteractions input {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -2120,12 +2120,12 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-control::-ms-expand {
+.form-control::-ms-expand, #schedule #interactions .mainInteractions input::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.form-control:focus {
+.form-control:focus, #schedule #interactions .mainInteractions input:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
@@ -2133,32 +2133,32 @@ pre code {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, #schedule #interactions .mainInteractions input::-webkit-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, #schedule #interactions .mainInteractions input::-moz-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, #schedule #interactions .mainInteractions input:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::-ms-input-placeholder {
+.form-control::-ms-input-placeholder, #schedule #interactions .mainInteractions input::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::placeholder {
+.form-control::placeholder, #schedule #interactions .mainInteractions input::placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled, #schedule #interactions .mainInteractions input:disabled, .form-control[readonly], #schedule #interactions .mainInteractions input[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -2212,48 +2212,48 @@ select.form-control:focus::-ms-value {
   border-width: 1px 0;
 }
 
-.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control,
+.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, #schedule #interactions .mainInteractions .input-group-sm > input.form-control-plaintext,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
-#interactions .input-group-sm > .prepend > .form-control-plaintext.input-group-text,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
-#interactions .input-group-sm > .append > .form-control-plaintext.input-group-text,
+#schedule #interactions .mainInteractions .input-group-sm > .append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > .form-control-plaintext.btn,
 .input-group-sm > .input-group-prepend > button.form-control-plaintext,
-#interactions .input-group-sm > .prepend > .form-control-plaintext.btn,
-#interactions .input-group-sm > .prepend > button.form-control-plaintext,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > button.form-control-plaintext,
 .input-group-sm > .input-group-append > .form-control-plaintext.btn,
+#schedule #interactions .mainInteractions .input-group-sm > .append > .form-control-plaintext.btn,
 .input-group-sm > .input-group-append > button.form-control-plaintext,
-#interactions .input-group-sm > .append > .form-control-plaintext.btn,
-#interactions .input-group-sm > .append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+#schedule #interactions .mainInteractions .input-group-sm > .append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, #schedule #interactions .mainInteractions .input-group-lg > input.form-control-plaintext,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
-#interactions .input-group-lg > .prepend > .form-control-plaintext.input-group-text,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
-#interactions .input-group-lg > .append > .form-control-plaintext.input-group-text,
+#schedule #interactions .mainInteractions .input-group-lg > .append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > .form-control-plaintext.btn,
 .input-group-lg > .input-group-prepend > button.form-control-plaintext,
-#interactions .input-group-lg > .prepend > .form-control-plaintext.btn,
-#interactions .input-group-lg > .prepend > button.form-control-plaintext,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > button.form-control-plaintext,
 .input-group-lg > .input-group-append > .form-control-plaintext.btn,
+#schedule #interactions .mainInteractions .input-group-lg > .append > .form-control-plaintext.btn,
 .input-group-lg > .input-group-append > button.form-control-plaintext,
-#interactions .input-group-lg > .append > .form-control-plaintext.btn,
-#interactions .input-group-lg > .append > button.form-control-plaintext {
+#schedule #interactions .mainInteractions .input-group-lg > .append > button.form-control-plaintext {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm, .input-group-sm > .form-control,
+.form-control-sm, .input-group-sm > .form-control, #schedule #interactions .mainInteractions .input-group-sm > input,
 .input-group-sm > .input-group-prepend > .input-group-text,
-#interactions .input-group-sm > .prepend > .input-group-text,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
-#interactions .input-group-sm > .append > .input-group-text,
+#schedule #interactions .mainInteractions .input-group-sm > .append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > .btn,
 .input-group-sm > .input-group-prepend > button,
-#interactions .input-group-sm > .prepend > .btn,
-#interactions .input-group-sm > .prepend > button,
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > button,
 .input-group-sm > .input-group-append > .btn,
+#schedule #interactions .mainInteractions .input-group-sm > .append > .btn,
 .input-group-sm > .input-group-append > button,
-#interactions .input-group-sm > .append > .btn,
-#interactions .input-group-sm > .append > button {
+#schedule #interactions .mainInteractions .input-group-sm > .append > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2262,29 +2262,29 @@ select.form-control:focus::-ms-value {
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
-#interactions .input-group-sm > .prepend > select.input-group-text:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
-#interactions .input-group-sm > .append > select.input-group-text:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-sm > .append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
-#interactions .input-group-sm > .prepend > select.btn:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-sm > .prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]),
-#interactions .input-group-sm > .append > select.btn:not([size]):not([multiple]) {
+#schedule #interactions .mainInteractions .input-group-sm > .append > select.btn:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px);
 }
 
-.form-control-lg, .input-group-lg > .form-control,
+.form-control-lg, .input-group-lg > .form-control, #schedule #interactions .mainInteractions .input-group-lg > input,
 .input-group-lg > .input-group-prepend > .input-group-text,
-#interactions .input-group-lg > .prepend > .input-group-text,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
-#interactions .input-group-lg > .append > .input-group-text,
+#schedule #interactions .mainInteractions .input-group-lg > .append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > .btn,
 .input-group-lg > .input-group-prepend > button,
-#interactions .input-group-lg > .prepend > .btn,
-#interactions .input-group-lg > .prepend > button,
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > button,
 .input-group-lg > .input-group-append > .btn,
+#schedule #interactions .mainInteractions .input-group-lg > .append > .btn,
 .input-group-lg > .input-group-append > button,
-#interactions .input-group-lg > .append > .btn,
-#interactions .input-group-lg > .append > button {
+#schedule #interactions .mainInteractions .input-group-lg > .append > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2293,13 +2293,13 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
-#interactions .input-group-lg > .prepend > select.input-group-text:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
-#interactions .input-group-lg > .append > select.input-group-text:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-lg > .append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
-#interactions .input-group-lg > .prepend > select.btn:not([size]):not([multiple]),
+#schedule #interactions .mainInteractions .input-group-lg > .prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]),
-#interactions .input-group-lg > .append > select.btn:not([size]):not([multiple]) {
+#schedule #interactions .mainInteractions .input-group-lg > .append > select.btn:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px);
 }
 
@@ -2389,20 +2389,23 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border-radius: 0.2rem;
 }
 
-.was-validated .form-control:valid, .form-control.is-valid, .was-validated .custom-select:valid,
+.was-validated .form-control:valid, .was-validated #schedule #interactions .mainInteractions input:valid, #schedule #interactions .mainInteractions .was-validated input:valid, .form-control.is-valid, #schedule #interactions .mainInteractions input.is-valid, .was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
 }
 
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus,
+.was-validated .form-control:valid:focus, .was-validated #schedule #interactions .mainInteractions input:valid:focus, #schedule #interactions .mainInteractions .was-validated input:valid:focus, .form-control.is-valid:focus, #schedule #interactions .mainInteractions input.is-valid:focus, .was-validated .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   border-color: #28a745;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
-.was-validated .form-control:valid ~ .valid-feedback,
-.was-validated .form-control:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback,
-.form-control.is-valid ~ .valid-tooltip, .was-validated .custom-select:valid ~ .valid-feedback,
+.was-validated .form-control:valid ~ .valid-feedback, .was-validated #schedule #interactions .mainInteractions input:valid ~ .valid-feedback, #schedule #interactions .mainInteractions .was-validated input:valid ~ .valid-feedback,
+.was-validated .form-control:valid ~ .valid-tooltip,
+.was-validated #schedule #interactions .mainInteractions input:valid ~ .valid-tooltip,
+#schedule #interactions .mainInteractions .was-validated input:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, #schedule #interactions .mainInteractions input.is-valid ~ .valid-feedback,
+.form-control.is-valid ~ .valid-tooltip,
+#schedule #interactions .mainInteractions input.is-valid ~ .valid-tooltip, .was-validated .custom-select:valid ~ .valid-feedback,
 .was-validated .custom-select:valid ~ .valid-tooltip,
 .custom-select.is-valid ~ .valid-feedback,
 .custom-select.is-valid ~ .valid-tooltip {
@@ -2482,20 +2485,23 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border-radius: 0.2rem;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid,
+.was-validated .form-control:invalid, .was-validated #schedule #interactions .mainInteractions input:invalid, #schedule #interactions .mainInteractions .was-validated input:invalid, .form-control.is-invalid, #schedule #interactions .mainInteractions input.is-invalid, .was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
 }
 
-.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus,
+.was-validated .form-control:invalid:focus, .was-validated #schedule #interactions .mainInteractions input:invalid:focus, #schedule #interactions .mainInteractions .was-validated input:invalid:focus, .form-control.is-invalid:focus, #schedule #interactions .mainInteractions input.is-invalid:focus, .was-validated .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated .form-control:invalid ~ .invalid-feedback,
-.was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-.form-control.is-invalid ~ .invalid-tooltip, .was-validated .custom-select:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-feedback, .was-validated #schedule #interactions .mainInteractions input:invalid ~ .invalid-feedback, #schedule #interactions .mainInteractions .was-validated input:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-tooltip,
+.was-validated #schedule #interactions .mainInteractions input:invalid ~ .invalid-tooltip,
+#schedule #interactions .mainInteractions .was-validated input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, #schedule #interactions .mainInteractions input.is-invalid ~ .invalid-feedback,
+.form-control.is-invalid ~ .invalid-tooltip,
+#schedule #interactions .mainInteractions input.is-invalid ~ .invalid-tooltip, .was-validated .custom-select:invalid ~ .invalid-feedback,
 .was-validated .custom-select:invalid ~ .invalid-tooltip,
 .custom-select.is-invalid ~ .invalid-feedback,
 .custom-select.is-invalid ~ .invalid-tooltip {
@@ -2600,7 +2606,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     margin-bottom: 0;
   }
 
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline #schedule #interactions .mainInteractions input, #schedule #interactions .mainInteractions .form-inline input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -2610,7 +2616,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     display: inline-block;
   }
 
-  .form-inline .input-group, .form-inline #interactions {
+  .form-inline .input-group, .form-inline #schedule #interactions .mainInteractions, #schedule #interactions .form-inline .mainInteractions, .form-inline #schedule #interactions, #schedule .form-inline #interactions {
     width: auto;
   }
 
@@ -2726,39 +2732,37 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-.btn-secondary, #interactions button {
+.btn-secondary {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.btn-secondary:hover, #interactions button:hover {
+.btn-secondary:hover {
   color: #fff;
   background-color: #5a6268;
   border-color: #545b62;
 }
 
-.btn-secondary:focus, #interactions button:focus, .btn-secondary.focus, #interactions button.focus {
+.btn-secondary:focus, .btn-secondary.focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
-.btn-secondary.disabled, #interactions button.disabled, .btn-secondary:disabled, #interactions button:disabled {
+.btn-secondary.disabled, .btn-secondary:disabled {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active, #interactions button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, #interactions button:not(:disabled):not(.disabled).active,
-.show > .btn-secondary.dropdown-toggle,
-#interactions .show > button.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus, #interactions button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, #interactions button:not(:disabled):not(.disabled).active:focus,
-.show > .btn-secondary.dropdown-toggle:focus,
-#interactions .show > button.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -2898,37 +2902,39 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
-.btn-light {
+.btn-light, #schedule #interactions button {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
 
-.btn-light:hover {
+.btn-light:hover, #schedule #interactions button:hover {
   color: #212529;
   background-color: #e2e6ea;
   border-color: #dae0e5;
 }
 
-.btn-light:focus, .btn-light.focus {
+.btn-light:focus, #schedule #interactions button:focus, .btn-light.focus, #schedule #interactions button.focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
-.btn-light.disabled, .btn-light:disabled {
+.btn-light.disabled, #schedule #interactions button.disabled, .btn-light:disabled, #schedule #interactions button:disabled {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
 
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
-.show > .btn-light.dropdown-toggle {
+.btn-light:not(:disabled):not(.disabled):active, #schedule #interactions button:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, #schedule #interactions button:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle,
+#schedule #interactions .show > button.dropdown-toggle {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df;
 }
 
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
-.show > .btn-light.dropdown-toggle:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, #schedule #interactions button:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, #schedule #interactions button:not(:disabled):not(.disabled).active:focus,
+.show > .btn-light.dropdown-toggle:focus,
+#schedule #interactions .show > button.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -3562,7 +3568,7 @@ tbody.collapse.show {
   justify-content: flex-start;
 }
 
-.btn-toolbar .input-group, .btn-toolbar #interactions {
+.btn-toolbar .input-group, .btn-toolbar #schedule #interactions .mainInteractions, #schedule #interactions .btn-toolbar .mainInteractions, .btn-toolbar #schedule #interactions, #schedule .btn-toolbar #interactions {
   width: auto;
 }
 
@@ -3661,7 +3667,7 @@ tbody.collapse.show {
   pointer-events: none;
 }
 
-.input-group, #interactions {
+.input-group, #schedule #interactions .mainInteractions, #schedule #interactions {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3674,11 +3680,13 @@ tbody.collapse.show {
   width: 100%;
 }
 
-.input-group > .form-control, #interactions > .form-control,
+.input-group > .form-control, #schedule #interactions .mainInteractions .input-group > input, #schedule #interactions .mainInteractions > .form-control, #schedule #interactions .mainInteractions > input, #schedule #interactions > .form-control, #schedule #interactions .mainInteractions #interactions > input,
 .input-group > .custom-select,
-#interactions > .custom-select,
+#schedule #interactions .mainInteractions > .custom-select,
+#schedule #interactions > .custom-select,
 .input-group > .custom-file,
-#interactions > .custom-file {
+#schedule #interactions .mainInteractions > .custom-file,
+#schedule #interactions > .custom-file {
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -3687,49 +3695,73 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.input-group > .form-control:focus, #interactions > .form-control:focus,
+.input-group > .form-control:focus, #schedule #interactions .mainInteractions .input-group > input:focus, #schedule #interactions .mainInteractions > .form-control:focus, #schedule #interactions .mainInteractions > input:focus, #schedule #interactions > .form-control:focus, #schedule #interactions .mainInteractions #interactions > input:focus,
 .input-group > .custom-select:focus,
-#interactions > .custom-select:focus,
+#schedule #interactions .mainInteractions > .custom-select:focus,
+#schedule #interactions > .custom-select:focus,
 .input-group > .custom-file:focus,
-#interactions > .custom-file:focus {
+#schedule #interactions .mainInteractions > .custom-file:focus,
+#schedule #interactions > .custom-file:focus {
   z-index: 3;
 }
 
-.input-group > .form-control + .form-control, #interactions > .form-control + .form-control,
+.input-group > .form-control + .form-control, #schedule #interactions .mainInteractions .input-group > input + .form-control, #schedule #interactions .mainInteractions .input-group > .form-control + input, #schedule #interactions .mainInteractions .input-group > input + input, #schedule #interactions .mainInteractions > .form-control + .form-control, #schedule #interactions .mainInteractions > input + .form-control, #schedule #interactions .mainInteractions > .form-control + input, #schedule #interactions .mainInteractions > input + input, #schedule #interactions > .form-control + .form-control, #schedule #interactions .mainInteractions #interactions > input + .form-control, #schedule #interactions .mainInteractions #interactions > .form-control + input, #schedule #interactions .mainInteractions #interactions > input + input,
 .input-group > .form-control + .custom-select,
-#interactions > .form-control + .custom-select,
+#schedule #interactions .mainInteractions .input-group > input + .custom-select,
+#schedule #interactions .mainInteractions > .form-control + .custom-select,
+#schedule #interactions .mainInteractions > input + .custom-select,
+#schedule #interactions > .form-control + .custom-select,
+#schedule #interactions .mainInteractions #interactions > input + .custom-select,
 .input-group > .form-control + .custom-file,
-#interactions > .form-control + .custom-file,
+#schedule #interactions .mainInteractions .input-group > input + .custom-file,
+#schedule #interactions .mainInteractions > .form-control + .custom-file,
+#schedule #interactions .mainInteractions > input + .custom-file,
+#schedule #interactions > .form-control + .custom-file,
+#schedule #interactions .mainInteractions #interactions > input + .custom-file,
 .input-group > .custom-select + .form-control,
-#interactions > .custom-select + .form-control,
+#schedule #interactions .mainInteractions .input-group > .custom-select + input,
+#schedule #interactions .mainInteractions > .custom-select + .form-control,
+#schedule #interactions .mainInteractions > .custom-select + input,
+#schedule #interactions > .custom-select + .form-control,
+#schedule #interactions .mainInteractions #interactions > .custom-select + input,
 .input-group > .custom-select + .custom-select,
-#interactions > .custom-select + .custom-select,
+#schedule #interactions .mainInteractions > .custom-select + .custom-select,
+#schedule #interactions > .custom-select + .custom-select,
 .input-group > .custom-select + .custom-file,
-#interactions > .custom-select + .custom-file,
+#schedule #interactions .mainInteractions > .custom-select + .custom-file,
+#schedule #interactions > .custom-select + .custom-file,
 .input-group > .custom-file + .form-control,
-#interactions > .custom-file + .form-control,
+#schedule #interactions .mainInteractions .input-group > .custom-file + input,
+#schedule #interactions .mainInteractions > .custom-file + .form-control,
+#schedule #interactions .mainInteractions > .custom-file + input,
+#schedule #interactions > .custom-file + .form-control,
+#schedule #interactions .mainInteractions #interactions > .custom-file + input,
 .input-group > .custom-file + .custom-select,
-#interactions > .custom-file + .custom-select,
+#schedule #interactions .mainInteractions > .custom-file + .custom-select,
+#schedule #interactions > .custom-file + .custom-select,
 .input-group > .custom-file + .custom-file,
-#interactions > .custom-file + .custom-file {
+#schedule #interactions .mainInteractions > .custom-file + .custom-file,
+#schedule #interactions > .custom-file + .custom-file {
   margin-left: -1px;
 }
 
-.input-group > .form-control:not(:last-child), #interactions > .form-control:not(:last-child),
+.input-group > .form-control:not(:last-child), #schedule #interactions .mainInteractions .input-group > input:not(:last-child), #schedule #interactions .mainInteractions > .form-control:not(:last-child), #schedule #interactions .mainInteractions > input:not(:last-child), #schedule #interactions > .form-control:not(:last-child), #schedule #interactions .mainInteractions #interactions > input:not(:last-child),
 .input-group > .custom-select:not(:last-child),
-#interactions > .custom-select:not(:last-child) {
+#schedule #interactions .mainInteractions > .custom-select:not(:last-child),
+#schedule #interactions > .custom-select:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .form-control:not(:first-child), #interactions > .form-control:not(:first-child),
+.input-group > .form-control:not(:first-child), #schedule #interactions .mainInteractions .input-group > input:not(:first-child), #schedule #interactions .mainInteractions > .form-control:not(:first-child), #schedule #interactions .mainInteractions > input:not(:first-child), #schedule #interactions > .form-control:not(:first-child), #schedule #interactions .mainInteractions #interactions > input:not(:first-child),
 .input-group > .custom-select:not(:first-child),
-#interactions > .custom-select:not(:first-child) {
+#schedule #interactions .mainInteractions > .custom-select:not(:first-child),
+#schedule #interactions > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group > .custom-file, #interactions > .custom-file {
+.input-group > .custom-file, #schedule #interactions .mainInteractions > .custom-file, #schedule #interactions > .custom-file {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3738,74 +3770,76 @@ tbody.collapse.show {
   align-items: center;
 }
 
-.input-group > .custom-file:not(:last-child) .custom-file-label, #interactions > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label, #schedule #interactions .mainInteractions > .custom-file:not(:last-child) .custom-file-label, #schedule #interactions > .custom-file:not(:last-child) .custom-file-label,
 .input-group > .custom-file:not(:last-child) .custom-file-label::before,
-#interactions > .custom-file:not(:last-child) .custom-file-label::before {
+#schedule #interactions .mainInteractions > .custom-file:not(:last-child) .custom-file-label::before,
+#schedule #interactions > .custom-file:not(:last-child) .custom-file-label::before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .custom-file:not(:first-child) .custom-file-label, #interactions > .custom-file:not(:first-child) .custom-file-label,
+.input-group > .custom-file:not(:first-child) .custom-file-label, #schedule #interactions .mainInteractions > .custom-file:not(:first-child) .custom-file-label, #schedule #interactions > .custom-file:not(:first-child) .custom-file-label,
 .input-group > .custom-file:not(:first-child) .custom-file-label::before,
-#interactions > .custom-file:not(:first-child) .custom-file-label::before {
+#schedule #interactions .mainInteractions > .custom-file:not(:first-child) .custom-file-label::before,
+#schedule #interactions > .custom-file:not(:first-child) .custom-file-label::before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group-prepend, #interactions .prepend,
+.input-group-prepend, #schedule #interactions .mainInteractions .prepend,
 .input-group-append,
-#interactions .append {
+#schedule #interactions .mainInteractions .append {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.input-group-prepend .btn, .input-group-prepend button, #interactions .prepend .btn, #interactions .prepend button,
+.input-group-prepend .btn, #schedule #interactions .mainInteractions .prepend .btn, .input-group-prepend button, #schedule #interactions .mainInteractions .prepend button,
 .input-group-append .btn,
+#schedule #interactions .mainInteractions .append .btn,
 .input-group-append button,
-#interactions .append .btn,
-#interactions .append button {
+#schedule #interactions .mainInteractions .append button {
   position: relative;
   z-index: 2;
 }
 
-.input-group-prepend .btn + .btn, .input-group-prepend button + .btn, .input-group-prepend .btn + button, .input-group-prepend button + button, #interactions .prepend .btn + .btn, #interactions .prepend button + .btn, #interactions .prepend .btn + button, #interactions .prepend button + button,
+.input-group-prepend .btn + .btn, #schedule #interactions .mainInteractions .prepend .btn + .btn, .input-group-prepend button + .btn, #schedule #interactions .mainInteractions .prepend button + .btn, .input-group-prepend .btn + button, #schedule #interactions .mainInteractions .prepend .btn + button, .input-group-prepend button + button, #schedule #interactions .mainInteractions .prepend button + button,
 .input-group-prepend .btn + .input-group-text,
+#schedule #interactions .mainInteractions .prepend .btn + .input-group-text,
 .input-group-prepend button + .input-group-text,
-#interactions .prepend .btn + .input-group-text,
-#interactions .prepend button + .input-group-text,
+#schedule #interactions .mainInteractions .prepend button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
-#interactions .prepend .input-group-text + .input-group-text,
+#schedule #interactions .mainInteractions .prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
+#schedule #interactions .mainInteractions .prepend .input-group-text + .btn,
 .input-group-prepend .input-group-text + button,
-#interactions .prepend .input-group-text + .btn,
-#interactions .prepend .input-group-text + button,
+#schedule #interactions .mainInteractions .prepend .input-group-text + button,
 .input-group-append .btn + .btn,
+#schedule #interactions .mainInteractions .append .btn + .btn,
 .input-group-append button + .btn,
+#schedule #interactions .mainInteractions .append button + .btn,
 .input-group-append .btn + button,
+#schedule #interactions .mainInteractions .append .btn + button,
 .input-group-append button + button,
-#interactions .append .btn + .btn,
-#interactions .append button + .btn,
-#interactions .append .btn + button,
-#interactions .append button + button,
+#schedule #interactions .mainInteractions .append button + button,
 .input-group-append .btn + .input-group-text,
+#schedule #interactions .mainInteractions .append .btn + .input-group-text,
 .input-group-append button + .input-group-text,
-#interactions .append .btn + .input-group-text,
-#interactions .append button + .input-group-text,
+#schedule #interactions .mainInteractions .append button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
-#interactions .append .input-group-text + .input-group-text,
+#schedule #interactions .mainInteractions .append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
+#schedule #interactions .mainInteractions .append .input-group-text + .btn,
 .input-group-append .input-group-text + button,
-#interactions .append .input-group-text + .btn,
-#interactions .append .input-group-text + button {
+#schedule #interactions .mainInteractions .append .input-group-text + button {
   margin-left: -1px;
 }
 
-.input-group-prepend, #interactions .prepend {
+.input-group-prepend, #schedule #interactions .mainInteractions .prepend {
   margin-right: -1px;
 }
 
-.input-group-append, #interactions .append {
+.input-group-append, #schedule #interactions .mainInteractions .append {
   margin-left: -1px;
 }
 
@@ -3834,68 +3868,96 @@ tbody.collapse.show {
   margin-top: 0;
 }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > button, #interactions .input-group > .prepend > .btn, #interactions .input-group > .prepend > button, #interactions > .input-group-prepend > .btn, #interactions > .input-group-prepend > button, #interactions > .prepend > .btn, #interactions > .prepend > button,
+.input-group > .input-group-prepend > .btn, #schedule #interactions .mainInteractions .input-group > .prepend > .btn, #schedule #interactions .mainInteractions > .input-group-prepend > .btn, #schedule #interactions .mainInteractions > .prepend > .btn, #schedule #interactions > .input-group-prepend > .btn, #schedule #interactions .mainInteractions #interactions > .prepend > .btn, .input-group > .input-group-prepend > button, #schedule #interactions .mainInteractions .input-group > .prepend > button, #schedule #interactions .mainInteractions > .input-group-prepend > button, #schedule #interactions .mainInteractions > .prepend > button, #schedule #interactions > .input-group-prepend > button, #schedule #interactions .mainInteractions #interactions > .prepend > button,
 .input-group > .input-group-prepend > .input-group-text,
-#interactions .input-group > .prepend > .input-group-text,
-#interactions > .input-group-prepend > .input-group-text,
-#interactions > .prepend > .input-group-text,
+#schedule #interactions .mainInteractions .input-group > .prepend > .input-group-text,
+#schedule #interactions .mainInteractions > .input-group-prepend > .input-group-text,
+#schedule #interactions .mainInteractions > .prepend > .input-group-text,
+#schedule #interactions > .input-group-prepend > .input-group-text,
+#schedule #interactions .mainInteractions #interactions > .prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+#schedule #interactions .mainInteractions .input-group > .append:not(:last-child) > .btn,
+#schedule #interactions .mainInteractions > .input-group-append:not(:last-child) > .btn,
+#schedule #interactions .mainInteractions > .append:not(:last-child) > .btn,
+#schedule #interactions > .input-group-append:not(:last-child) > .btn,
+#schedule #interactions .mainInteractions #interactions > .append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > button,
-#interactions .input-group > .append:not(:last-child) > .btn,
-#interactions .input-group > .append:not(:last-child) > button,
-#interactions > .input-group-append:not(:last-child) > .btn,
-#interactions > .input-group-append:not(:last-child) > button,
-#interactions > .append:not(:last-child) > .btn,
-#interactions > .append:not(:last-child) > button,
+#schedule #interactions .mainInteractions .input-group > .append:not(:last-child) > button,
+#schedule #interactions .mainInteractions > .input-group-append:not(:last-child) > button,
+#schedule #interactions .mainInteractions > .append:not(:last-child) > button,
+#schedule #interactions > .input-group-append:not(:last-child) > button,
+#schedule #interactions .mainInteractions #interactions > .append:not(:last-child) > button,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
-#interactions .input-group > .append:not(:last-child) > .input-group-text,
-#interactions > .input-group-append:not(:last-child) > .input-group-text,
-#interactions > .append:not(:last-child) > .input-group-text,
+#schedule #interactions .mainInteractions .input-group > .append:not(:last-child) > .input-group-text,
+#schedule #interactions .mainInteractions > .input-group-append:not(:last-child) > .input-group-text,
+#schedule #interactions .mainInteractions > .append:not(:last-child) > .input-group-text,
+#schedule #interactions > .input-group-append:not(:last-child) > .input-group-text,
+#schedule #interactions .mainInteractions #interactions > .append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions .input-group > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions #interactions > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
-#interactions .input-group > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-#interactions .input-group > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
-#interactions > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-#interactions > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
-#interactions > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-#interactions > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions .input-group > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#schedule #interactions .mainInteractions #interactions > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
-#interactions .input-group > .append:last-child > .input-group-text:not(:last-child),
-#interactions > .input-group-append:last-child > .input-group-text:not(:last-child),
-#interactions > .append:last-child > .input-group-text:not(:last-child) {
+#schedule #interactions .mainInteractions .input-group > .append:last-child > .input-group-text:not(:last-child),
+#schedule #interactions .mainInteractions > .input-group-append:last-child > .input-group-text:not(:last-child),
+#schedule #interactions .mainInteractions > .append:last-child > .input-group-text:not(:last-child),
+#schedule #interactions > .input-group-append:last-child > .input-group-text:not(:last-child),
+#schedule #interactions .mainInteractions #interactions > .append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > button, #interactions .input-group > .append > .btn, #interactions .input-group > .append > button, #interactions > .input-group-append > .btn, #interactions > .input-group-append > button, #interactions > .append > .btn, #interactions > .append > button,
+.input-group > .input-group-append > .btn, #schedule #interactions .mainInteractions .input-group > .append > .btn, #schedule #interactions .mainInteractions > .input-group-append > .btn, #schedule #interactions .mainInteractions > .append > .btn, #schedule #interactions > .input-group-append > .btn, #schedule #interactions .mainInteractions #interactions > .append > .btn, .input-group > .input-group-append > button, #schedule #interactions .mainInteractions .input-group > .append > button, #schedule #interactions .mainInteractions > .input-group-append > button, #schedule #interactions .mainInteractions > .append > button, #schedule #interactions > .input-group-append > button, #schedule #interactions .mainInteractions #interactions > .append > button,
 .input-group > .input-group-append > .input-group-text,
-#interactions .input-group > .append > .input-group-text,
-#interactions > .input-group-append > .input-group-text,
-#interactions > .append > .input-group-text,
+#schedule #interactions .mainInteractions .input-group > .append > .input-group-text,
+#schedule #interactions .mainInteractions > .input-group-append > .input-group-text,
+#schedule #interactions .mainInteractions > .append > .input-group-text,
+#schedule #interactions > .input-group-append > .input-group-text,
+#schedule #interactions .mainInteractions #interactions > .append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+#schedule #interactions .mainInteractions .input-group > .prepend:not(:first-child) > .btn,
+#schedule #interactions .mainInteractions > .input-group-prepend:not(:first-child) > .btn,
+#schedule #interactions .mainInteractions > .prepend:not(:first-child) > .btn,
+#schedule #interactions > .input-group-prepend:not(:first-child) > .btn,
+#schedule #interactions .mainInteractions #interactions > .prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > button,
-#interactions .input-group > .prepend:not(:first-child) > .btn,
-#interactions .input-group > .prepend:not(:first-child) > button,
-#interactions > .input-group-prepend:not(:first-child) > .btn,
-#interactions > .input-group-prepend:not(:first-child) > button,
-#interactions > .prepend:not(:first-child) > .btn,
-#interactions > .prepend:not(:first-child) > button,
+#schedule #interactions .mainInteractions .input-group > .prepend:not(:first-child) > button,
+#schedule #interactions .mainInteractions > .input-group-prepend:not(:first-child) > button,
+#schedule #interactions .mainInteractions > .prepend:not(:first-child) > button,
+#schedule #interactions > .input-group-prepend:not(:first-child) > button,
+#schedule #interactions .mainInteractions #interactions > .prepend:not(:first-child) > button,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-#interactions .input-group > .prepend:not(:first-child) > .input-group-text,
-#interactions > .input-group-prepend:not(:first-child) > .input-group-text,
-#interactions > .prepend:not(:first-child) > .input-group-text,
+#schedule #interactions .mainInteractions .input-group > .prepend:not(:first-child) > .input-group-text,
+#schedule #interactions .mainInteractions > .input-group-prepend:not(:first-child) > .input-group-text,
+#schedule #interactions .mainInteractions > .prepend:not(:first-child) > .input-group-text,
+#schedule #interactions > .input-group-prepend:not(:first-child) > .input-group-text,
+#schedule #interactions .mainInteractions #interactions > .prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+#schedule #interactions .mainInteractions .input-group > .prepend:first-child > .btn:not(:first-child),
+#schedule #interactions .mainInteractions > .input-group-prepend:first-child > .btn:not(:first-child),
+#schedule #interactions .mainInteractions > .prepend:first-child > .btn:not(:first-child),
+#schedule #interactions > .input-group-prepend:first-child > .btn:not(:first-child),
+#schedule #interactions .mainInteractions #interactions > .prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > button:not(:first-child),
-#interactions .input-group > .prepend:first-child > .btn:not(:first-child),
-#interactions .input-group > .prepend:first-child > button:not(:first-child),
-#interactions > .input-group-prepend:first-child > .btn:not(:first-child),
-#interactions > .input-group-prepend:first-child > button:not(:first-child),
-#interactions > .prepend:first-child > .btn:not(:first-child),
-#interactions > .prepend:first-child > button:not(:first-child),
+#schedule #interactions .mainInteractions .input-group > .prepend:first-child > button:not(:first-child),
+#schedule #interactions .mainInteractions > .input-group-prepend:first-child > button:not(:first-child),
+#schedule #interactions .mainInteractions > .prepend:first-child > button:not(:first-child),
+#schedule #interactions > .input-group-prepend:first-child > button:not(:first-child),
+#schedule #interactions .mainInteractions #interactions > .prepend:first-child > button:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
-#interactions .input-group > .prepend:first-child > .input-group-text:not(:first-child),
-#interactions > .input-group-prepend:first-child > .input-group-text:not(:first-child),
-#interactions > .prepend:first-child > .input-group-text:not(:first-child) {
+#schedule #interactions .mainInteractions .input-group > .prepend:first-child > .input-group-text:not(:first-child),
+#schedule #interactions .mainInteractions > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+#schedule #interactions .mainInteractions > .prepend:first-child > .input-group-text:not(:first-child),
+#schedule #interactions > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+#schedule #interactions .mainInteractions #interactions > .prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -9720,6 +9782,14 @@ h3 {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.dateContainer {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
 header {
   text-align: center;
 }
@@ -9727,20 +9797,23 @@ main {
   padding: 3em;
 }
 
-.hidden {
-  display: none;
+#schedule {
+  width: 90%;
+  margin: 0 auto;
 }
-
-#week {
-  height: 100%;
+#schedule #interactions .mainInteractions {
+  margin-left: 0;
+  margin-right: 0;
 }
-#week .dateContainer {
+#schedule #week {
+  overflow-y: scroll;
+  height: 400px;
+  border-radius: 1%;
+  border: 2px solid black;
+}
+#schedule #week .dateContainer {
   margin-left: 1%;
   margin-right: 1%;
-}
-
-.dateContainer {
-  display: inline-block;
 }
 
 /*# sourceMappingURL=schedulestyle.css.map */
