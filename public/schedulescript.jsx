@@ -1,6 +1,6 @@
 var dates = [];
 
-// check if a given date String is valid
+// check if a given date String 'input' is valid
 function isValidDate(input) {
   var arr = input.split('-');
   for(var i = 0; i < 3; i++) {
@@ -12,7 +12,7 @@ function isValidDate(input) {
   return true;
 }
 
-// convert a date into a comma separated string Day, Month Date
+// convert a String date into a comma separated string Day, Month Date
 function dateToString(date) {
     var days = [
       'Monday',
@@ -55,11 +55,11 @@ function dateToString(date) {
 class Time extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {count: this.props.count, toggle: false}
+    this.state = {count: this.props.count, toggle: false, class: "time off"}
   }
   render() {
-    return <div className="time">
-      <p onClick={() => this.toggle()}>
+    return <div onClick={() => this.toggle()} className={this.state.class}>
+      <p>
       {this.props.string + " - " + this.state.count}</p>
     </div>
   }
@@ -83,7 +83,11 @@ class Time extends React.Component {
       }
     }
     console.log(dates);
-    this.setState({count: newCount, toggle: !this.state.toggle});
+    if(this.state.toggle) {
+      this.setState({count: newCount, toggle: !this.state.toggle, class: "time off"});
+    } else {
+      this.setState({count: newCount, toggle: !this.state.toggle, class: "time on"});
+    }
   }
 }
 
@@ -98,9 +102,11 @@ class Day extends React.Component {
   render() {
     return <div className="dateContainer">
       {dateToString(this.props.date)}
-      {this.state.times}
       <button onClick={() => this.props.removeFunct(this.props.index)}>
       Remove</button>
+      <div className="list-group list-group-flush">
+        {this.state.times}
+      </div>
     </div>;
   }
   getTimeArray() {
@@ -141,27 +147,35 @@ class Week extends React.Component {
   render() {
     return <div id="schedule">
       <div id="interactions">
-        <button onClick={this.addDay}>Add date</button>
-        <input type="date" id="date"></input>
-        <button>Submit</button>
-        <button onClick={() => {
-          if(this.state.moreOptions) {
-            this.setState({value: this.state.value, moreOptions: false});
-            document.getElementById('more-options').className = "hidden";
-            return;
-          }
-          this.setState({value: this.state.value, moreOptions: true});
-          document.getElementById('more-options').className = "";
-          return;
-        }}>More options</button>
-        <div className="hidden" id="more-options">
-          Begin at:
-          <input type="number" id="min"></input>
-          End at:
-          <input type="number" id="max"></input>
-          Interval (hours):
-          <input type="number" id="interval"></input>
+        <div className="mainInteractions">
+          <div className="prepend">
+            <button onClick={this.addDay}>Add date</button>
+          </div>
+          <input type="date" id="date"></input>  
+          <div className="append">
+            <button>Submit</button>
+            <button onClick={() => {
+              if(this.state.moreOptions) {
+                this.setState({value: this.state.value, moreOptions: false});
+                document.getElementById('more-options').className = "hidden";
+                return;
+              }
+              this.setState({value: this.state.value, moreOptions: true});
+              document.getElementById('more-options').className = "";
+              return;
+            }}>More options</button>
+          </div>
+          
         </div>
+        <div className="hidden" id="more-options">
+            Begin at:
+            <input type="number" id="min"></input>
+            End at:
+            <input type="number" id="max"></input>
+            Interval (hours):
+            <input type="number" id="interval"></input>
+          </div>
+        
       </div>
       <div id="week">
         {this.state.value}

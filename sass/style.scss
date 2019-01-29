@@ -44,22 +44,3 @@ main {
 .hidden {
   display: none;
 }
-
-#interactions {
-
-  #date {
-    max-width: 50%;
-  }
-}
-
-#week {
-  height: 100%;
-
-  .dateContainer {
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-}
-.dateContainer {
-  display: inline-block;
-}
