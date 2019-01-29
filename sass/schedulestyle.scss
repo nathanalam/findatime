@@ -1,0 +1,49 @@
+@import "../bootstrap/css/bootstrap";
+
+body {
+
+}
+
+header {
+  text-align: center;
+  #title {
+    
+  }
+}
+
+main {
+  padding: 3em;
+}
+
+.hidden {
+  display: none;
+}
+
+#interactions {
+  @extend .input-group;
+  button {
+    @extend .btn-secondary;
+  }
+  .prepend {
+    @extend .input-group-prepend;
+  }
+  .append {
+    @extend .input-group-append;
+  }
+}
+
+button {
+  @extend .btn;
+}
+
+#week {
+  height: 100%;
+
+  .dateContainer {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+.dateContainer {
+  display: inline-block;
+}

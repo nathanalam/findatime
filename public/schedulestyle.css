@@ -2214,28 +2214,46 @@ select.form-control:focus::-ms-value {
 
 .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
+#interactions .input-group-sm > .prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
+#interactions .input-group-sm > .append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
-main .input-group-sm > .input-group-prepend > .form-control-plaintext#addSchedule,
+.input-group-sm > .input-group-prepend > button.form-control-plaintext,
+#interactions .input-group-sm > .prepend > .form-control-plaintext.btn,
+#interactions .input-group-sm > .prepend > button.form-control-plaintext,
 .input-group-sm > .input-group-append > .form-control-plaintext.btn,
-main .input-group-sm > .input-group-append > .form-control-plaintext#addSchedule, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+.input-group-sm > .input-group-append > button.form-control-plaintext,
+#interactions .input-group-sm > .append > .form-control-plaintext.btn,
+#interactions .input-group-sm > .append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
+#interactions .input-group-lg > .prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
+#interactions .input-group-lg > .append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
-main .input-group-lg > .input-group-prepend > .form-control-plaintext#addSchedule,
+.input-group-lg > .input-group-prepend > button.form-control-plaintext,
+#interactions .input-group-lg > .prepend > .form-control-plaintext.btn,
+#interactions .input-group-lg > .prepend > button.form-control-plaintext,
 .input-group-lg > .input-group-append > .form-control-plaintext.btn,
-main .input-group-lg > .input-group-append > .form-control-plaintext#addSchedule {
+.input-group-lg > .input-group-append > button.form-control-plaintext,
+#interactions .input-group-lg > .append > .form-control-plaintext.btn,
+#interactions .input-group-lg > .append > button.form-control-plaintext {
   padding-right: 0;
   padding-left: 0;
 }
 
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-prepend > .input-group-text,
+#interactions .input-group-sm > .prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
+#interactions .input-group-sm > .append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-main .input-group-sm > .input-group-prepend > #addSchedule,
+.input-group-sm > .input-group-prepend > button,
+#interactions .input-group-sm > .prepend > .btn,
+#interactions .input-group-sm > .prepend > button,
 .input-group-sm > .input-group-append > .btn,
-main .input-group-sm > .input-group-append > #addSchedule {
+.input-group-sm > .input-group-append > button,
+#interactions .input-group-sm > .append > .btn,
+#interactions .input-group-sm > .append > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2244,21 +2262,29 @@ main .input-group-sm > .input-group-append > #addSchedule {
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+#interactions .input-group-sm > .prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
+#interactions .input-group-sm > .append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
-main .input-group-sm > .input-group-prepend > select#addSchedule:not([size]):not([multiple]),
+#interactions .input-group-sm > .prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]),
-main .input-group-sm > .input-group-append > select#addSchedule:not([size]):not([multiple]) {
+#interactions .input-group-sm > .append > select.btn:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px);
 }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
+#interactions .input-group-lg > .prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
+#interactions .input-group-lg > .append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-main .input-group-lg > .input-group-prepend > #addSchedule,
+.input-group-lg > .input-group-prepend > button,
+#interactions .input-group-lg > .prepend > .btn,
+#interactions .input-group-lg > .prepend > button,
 .input-group-lg > .input-group-append > .btn,
-main .input-group-lg > .input-group-append > #addSchedule {
+.input-group-lg > .input-group-append > button,
+#interactions .input-group-lg > .append > .btn,
+#interactions .input-group-lg > .append > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2267,11 +2293,13 @@ main .input-group-lg > .input-group-append > #addSchedule {
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+#interactions .input-group-lg > .prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
+#interactions .input-group-lg > .append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
-main .input-group-lg > .input-group-prepend > select#addSchedule:not([size]):not([multiple]),
+#interactions .input-group-lg > .prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]),
-main .input-group-lg > .input-group-append > select#addSchedule:not([size]):not([multiple]) {
+#interactions .input-group-lg > .append > select.btn:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px);
 }
 
@@ -2582,7 +2610,7 @@ main .input-group-lg > .input-group-append > select#addSchedule:not([size]):not(
     display: inline-block;
   }
 
-  .form-inline .input-group {
+  .form-inline .input-group, .form-inline #interactions {
     width: auto;
   }
 
@@ -2620,7 +2648,7 @@ main .input-group-lg > .input-group-append > select#addSchedule:not([size]):not(
     margin-bottom: 0;
   }
 }
-.btn, main #addSchedule {
+.btn, button {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -2638,31 +2666,29 @@ main .input-group-lg > .input-group-append > select#addSchedule:not([size]):not(
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:hover, main #addSchedule:hover, .btn:focus, main #addSchedule:focus {
+.btn:hover, button:hover, .btn:focus, button:focus {
   text-decoration: none;
 }
 
-.btn:focus, main #addSchedule:focus, .btn.focus, main .focus#addSchedule {
+.btn:focus, button:focus, .btn.focus, button.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled, main .disabled#addSchedule, .btn:disabled, main #addSchedule:disabled {
+.btn.disabled, button.disabled, .btn:disabled, button:disabled {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled), main #addSchedule:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled), button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
-.btn:not(:disabled):not(.disabled):active, main #addSchedule:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, main #addSchedule:not(:disabled):not(.disabled).active {
+.btn:not(:disabled):not(.disabled):active, button:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, button:not(:disabled):not(.disabled).active {
   background-image: none;
 }
 
-a.btn.disabled, main a.disabled#addSchedule,
-fieldset:disabled a.btn,
-fieldset:disabled main a#addSchedule,
-main fieldset:disabled a#addSchedule {
+a.btn.disabled,
+fieldset:disabled a.btn {
   pointer-events: none;
 }
 
@@ -2700,39 +2726,39 @@ main fieldset:disabled a#addSchedule {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-.btn-secondary, main #addSchedule {
+.btn-secondary, #interactions button {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.btn-secondary:hover, main #addSchedule:hover {
+.btn-secondary:hover, #interactions button:hover {
   color: #fff;
   background-color: #5a6268;
   border-color: #545b62;
 }
 
-.btn-secondary:focus, main #addSchedule:focus, .btn-secondary.focus, main .focus#addSchedule {
+.btn-secondary:focus, #interactions button:focus, .btn-secondary.focus, #interactions button.focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
-.btn-secondary.disabled, main .disabled#addSchedule, .btn-secondary:disabled, main #addSchedule:disabled {
+.btn-secondary.disabled, #interactions button.disabled, .btn-secondary:disabled, #interactions button:disabled {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active, main #addSchedule:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, main #addSchedule:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active, #interactions button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, #interactions button:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle,
-main .show > .dropdown-toggle#addSchedule {
+#interactions .show > button.dropdown-toggle {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus, main #addSchedule:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, main #addSchedule:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus, #interactions button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, #interactions button:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus,
-main .show > .dropdown-toggle#addSchedule:focus {
+#interactions .show > button.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -3235,14 +3261,14 @@ main .show > .dropdown-toggle#addSchedule:focus {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, main .btn-group-lg > #addSchedule {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, main .btn-group-sm > #addSchedule {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3482,52 +3508,45 @@ tbody.collapse.show {
   vertical-align: middle;
 }
 
-.btn-group > .btn, main .btn-group > #addSchedule,
+.btn-group > .btn, .btn-group > button,
 .btn-group-vertical > .btn,
-main .btn-group-vertical > #addSchedule {
+.btn-group-vertical > button {
   position: relative;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
-.btn-group > .btn:hover, main .btn-group > #addSchedule:hover,
+.btn-group > .btn:hover, .btn-group > button:hover,
 .btn-group-vertical > .btn:hover,
-main .btn-group-vertical > #addSchedule:hover {
+.btn-group-vertical > button:hover {
   z-index: 1;
 }
 
-.btn-group > .btn:focus, main .btn-group > #addSchedule:focus, .btn-group > .btn:active, main .btn-group > #addSchedule:active, .btn-group > .btn.active, main .btn-group > .active#addSchedule,
+.btn-group > .btn:focus, .btn-group > button:focus, .btn-group > .btn:active, .btn-group > button:active, .btn-group > .btn.active, .btn-group > button.active,
 .btn-group-vertical > .btn:focus,
-main .btn-group-vertical > #addSchedule:focus,
+.btn-group-vertical > button:focus,
 .btn-group-vertical > .btn:active,
-main .btn-group-vertical > #addSchedule:active,
+.btn-group-vertical > button:active,
 .btn-group-vertical > .btn.active,
-main .btn-group-vertical > .active#addSchedule {
+.btn-group-vertical > button.active {
   z-index: 1;
 }
 
-.btn-group .btn + .btn, .btn-group main #addSchedule + .btn, main .btn-group #addSchedule + .btn, .btn-group main .btn + #addSchedule, main .btn-group .btn + #addSchedule, .btn-group main #addSchedule + #addSchedule, main .btn-group #addSchedule + #addSchedule,
+.btn-group .btn + .btn, .btn-group button + .btn, .btn-group .btn + button, .btn-group button + button,
 .btn-group .btn + .btn-group,
-.btn-group main #addSchedule + .btn-group,
-main .btn-group #addSchedule + .btn-group,
+.btn-group button + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group main .btn-group + #addSchedule,
-main .btn-group .btn-group + #addSchedule,
+.btn-group .btn-group + button,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
-.btn-group-vertical main #addSchedule + .btn,
-main .btn-group-vertical #addSchedule + .btn,
-.btn-group-vertical main .btn + #addSchedule,
-main .btn-group-vertical .btn + #addSchedule,
-.btn-group-vertical main #addSchedule + #addSchedule,
-main .btn-group-vertical #addSchedule + #addSchedule,
+.btn-group-vertical button + .btn,
+.btn-group-vertical .btn + button,
+.btn-group-vertical button + button,
 .btn-group-vertical .btn + .btn-group,
-.btn-group-vertical main #addSchedule + .btn-group,
-main .btn-group-vertical #addSchedule + .btn-group,
+.btn-group-vertical button + .btn-group,
 .btn-group-vertical .btn-group + .btn,
-.btn-group-vertical main .btn-group + #addSchedule,
-main .btn-group-vertical .btn-group + #addSchedule,
+.btn-group-vertical .btn-group + button,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3543,24 +3562,24 @@ main .btn-group-vertical .btn-group + #addSchedule,
   justify-content: flex-start;
 }
 
-.btn-toolbar .input-group {
+.btn-toolbar .input-group, .btn-toolbar #interactions {
   width: auto;
 }
 
-.btn-group > .btn:first-child, main .btn-group > #addSchedule:first-child {
+.btn-group > .btn:first-child, .btn-group > button:first-child {
   margin-left: 0;
 }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), main .btn-group > #addSchedule:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
-main .btn-group > .btn-group:not(:last-child) > #addSchedule {
+.btn-group > .btn-group:not(:last-child) > button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.btn-group > .btn:not(:first-child), main .btn-group > #addSchedule:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > button:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
-main .btn-group > .btn-group:not(:first-child) > #addSchedule {
+.btn-group > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3574,12 +3593,12 @@ main .btn-group > .btn-group:not(:first-child) > #addSchedule {
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, main .btn-group-sm > #addSchedule + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, main .btn-group-lg > #addSchedule + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3597,44 +3616,44 @@ main .btn-group > .btn-group:not(:first-child) > #addSchedule {
   justify-content: center;
 }
 
-.btn-group-vertical .btn, .btn-group-vertical main #addSchedule, main .btn-group-vertical #addSchedule,
+.btn-group-vertical .btn, .btn-group-vertical button,
 .btn-group-vertical .btn-group {
   width: 100%;
 }
 
-.btn-group-vertical > .btn + .btn, main .btn-group-vertical > #addSchedule + .btn, main .btn-group-vertical > .btn + #addSchedule, main .btn-group-vertical > #addSchedule + #addSchedule,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical > .btn + button, .btn-group-vertical > button + button,
 .btn-group-vertical > .btn + .btn-group,
-main .btn-group-vertical > #addSchedule + .btn-group,
+.btn-group-vertical > button + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
-main .btn-group-vertical > .btn-group + #addSchedule,
+.btn-group-vertical > .btn-group + button,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), main .btn-group-vertical > #addSchedule:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
-main .btn-group-vertical > .btn-group:not(:last-child) > #addSchedule {
+.btn-group-vertical > .btn-group:not(:last-child) > button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child), main .btn-group-vertical > #addSchedule:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
-main .btn-group-vertical > .btn-group:not(:first-child) > #addSchedule {
+.btn-group-vertical > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group-toggle > .btn, main .btn-group-toggle > #addSchedule,
+.btn-group-toggle > .btn, .btn-group-toggle > button,
 .btn-group-toggle > .btn-group > .btn,
-main .btn-group-toggle > .btn-group > #addSchedule {
+.btn-group-toggle > .btn-group > button {
   margin-bottom: 0;
 }
 
-.btn-group-toggle > .btn input[type=radio], main .btn-group-toggle > #addSchedule input[type=radio],
+.btn-group-toggle > .btn input[type=radio], .btn-group-toggle > button input[type=radio],
 .btn-group-toggle > .btn input[type=checkbox],
-main .btn-group-toggle > #addSchedule input[type=checkbox],
+.btn-group-toggle > button input[type=checkbox],
 .btn-group-toggle > .btn-group > .btn input[type=radio],
 .btn-group-toggle > .btn-group > .btn input[type=checkbox] {
   position: absolute;
@@ -3642,7 +3661,7 @@ main .btn-group-toggle > #addSchedule input[type=checkbox],
   pointer-events: none;
 }
 
-.input-group {
+.input-group, #interactions {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3655,9 +3674,11 @@ main .btn-group-toggle > #addSchedule input[type=checkbox],
   width: 100%;
 }
 
-.input-group > .form-control,
+.input-group > .form-control, #interactions > .form-control,
 .input-group > .custom-select,
-.input-group > .custom-file {
+#interactions > .custom-select,
+.input-group > .custom-file,
+#interactions > .custom-file {
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -3666,37 +3687,49 @@ main .btn-group-toggle > #addSchedule input[type=checkbox],
   margin-bottom: 0;
 }
 
-.input-group > .form-control:focus,
+.input-group > .form-control:focus, #interactions > .form-control:focus,
 .input-group > .custom-select:focus,
-.input-group > .custom-file:focus {
+#interactions > .custom-select:focus,
+.input-group > .custom-file:focus,
+#interactions > .custom-file:focus {
   z-index: 3;
 }
 
-.input-group > .form-control + .form-control,
+.input-group > .form-control + .form-control, #interactions > .form-control + .form-control,
 .input-group > .form-control + .custom-select,
+#interactions > .form-control + .custom-select,
 .input-group > .form-control + .custom-file,
+#interactions > .form-control + .custom-file,
 .input-group > .custom-select + .form-control,
+#interactions > .custom-select + .form-control,
 .input-group > .custom-select + .custom-select,
+#interactions > .custom-select + .custom-select,
 .input-group > .custom-select + .custom-file,
+#interactions > .custom-select + .custom-file,
 .input-group > .custom-file + .form-control,
+#interactions > .custom-file + .form-control,
 .input-group > .custom-file + .custom-select,
-.input-group > .custom-file + .custom-file {
+#interactions > .custom-file + .custom-select,
+.input-group > .custom-file + .custom-file,
+#interactions > .custom-file + .custom-file {
   margin-left: -1px;
 }
 
-.input-group > .form-control:not(:last-child),
-.input-group > .custom-select:not(:last-child) {
+.input-group > .form-control:not(:last-child), #interactions > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child),
+#interactions > .custom-select:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .form-control:not(:first-child),
-.input-group > .custom-select:not(:first-child) {
+.input-group > .form-control:not(:first-child), #interactions > .form-control:not(:first-child),
+.input-group > .custom-select:not(:first-child),
+#interactions > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group > .custom-file {
+.input-group > .custom-file, #interactions > .custom-file {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3705,63 +3738,74 @@ main .btn-group-toggle > #addSchedule input[type=checkbox],
   align-items: center;
 }
 
-.input-group > .custom-file:not(:last-child) .custom-file-label,
-.input-group > .custom-file:not(:last-child) .custom-file-label::before {
+.input-group > .custom-file:not(:last-child) .custom-file-label, #interactions > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label::before,
+#interactions > .custom-file:not(:last-child) .custom-file-label::before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .custom-file:not(:first-child) .custom-file-label,
-.input-group > .custom-file:not(:first-child) .custom-file-label::before {
+.input-group > .custom-file:not(:first-child) .custom-file-label, #interactions > .custom-file:not(:first-child) .custom-file-label,
+.input-group > .custom-file:not(:first-child) .custom-file-label::before,
+#interactions > .custom-file:not(:first-child) .custom-file-label::before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group-prepend,
-.input-group-append {
+.input-group-prepend, #interactions .prepend,
+.input-group-append,
+#interactions .append {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.input-group-prepend .btn, .input-group-prepend main #addSchedule, main .input-group-prepend #addSchedule,
+.input-group-prepend .btn, .input-group-prepend button, #interactions .prepend .btn, #interactions .prepend button,
 .input-group-append .btn,
-.input-group-append main #addSchedule,
-main .input-group-append #addSchedule {
+.input-group-append button,
+#interactions .append .btn,
+#interactions .append button {
   position: relative;
   z-index: 2;
 }
 
-.input-group-prepend .btn + .btn, .input-group-prepend main #addSchedule + .btn, main .input-group-prepend #addSchedule + .btn, .input-group-prepend main .btn + #addSchedule, main .input-group-prepend .btn + #addSchedule, .input-group-prepend main #addSchedule + #addSchedule, main .input-group-prepend #addSchedule + #addSchedule,
+.input-group-prepend .btn + .btn, .input-group-prepend button + .btn, .input-group-prepend .btn + button, .input-group-prepend button + button, #interactions .prepend .btn + .btn, #interactions .prepend button + .btn, #interactions .prepend .btn + button, #interactions .prepend button + button,
 .input-group-prepend .btn + .input-group-text,
-.input-group-prepend main #addSchedule + .input-group-text,
-main .input-group-prepend #addSchedule + .input-group-text,
+.input-group-prepend button + .input-group-text,
+#interactions .prepend .btn + .input-group-text,
+#interactions .prepend button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
+#interactions .prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
-.input-group-prepend main .input-group-text + #addSchedule,
-main .input-group-prepend .input-group-text + #addSchedule,
+.input-group-prepend .input-group-text + button,
+#interactions .prepend .input-group-text + .btn,
+#interactions .prepend .input-group-text + button,
 .input-group-append .btn + .btn,
-.input-group-append main #addSchedule + .btn,
-main .input-group-append #addSchedule + .btn,
-.input-group-append main .btn + #addSchedule,
-main .input-group-append .btn + #addSchedule,
-.input-group-append main #addSchedule + #addSchedule,
-main .input-group-append #addSchedule + #addSchedule,
+.input-group-append button + .btn,
+.input-group-append .btn + button,
+.input-group-append button + button,
+#interactions .append .btn + .btn,
+#interactions .append button + .btn,
+#interactions .append .btn + button,
+#interactions .append button + button,
 .input-group-append .btn + .input-group-text,
-.input-group-append main #addSchedule + .input-group-text,
-main .input-group-append #addSchedule + .input-group-text,
+.input-group-append button + .input-group-text,
+#interactions .append .btn + .input-group-text,
+#interactions .append button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
+#interactions .append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
-.input-group-append main .input-group-text + #addSchedule,
-main .input-group-append .input-group-text + #addSchedule {
+.input-group-append .input-group-text + button,
+#interactions .append .input-group-text + .btn,
+#interactions .append .input-group-text + button {
   margin-left: -1px;
 }
 
-.input-group-prepend {
+.input-group-prepend, #interactions .prepend {
   margin-right: -1px;
 }
 
-.input-group-append {
+.input-group-append, #interactions .append {
   margin-left: -1px;
 }
 
@@ -3790,26 +3834,68 @@ main .input-group-append .input-group-text + #addSchedule {
   margin-top: 0;
 }
 
-.input-group > .input-group-prepend > .btn, main .input-group > .input-group-prepend > #addSchedule,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > button, #interactions .input-group > .prepend > .btn, #interactions .input-group > .prepend > button, #interactions > .input-group-prepend > .btn, #interactions > .input-group-prepend > button, #interactions > .prepend > .btn, #interactions > .prepend > button,
 .input-group > .input-group-prepend > .input-group-text,
+#interactions .input-group > .prepend > .input-group-text,
+#interactions > .input-group-prepend > .input-group-text,
+#interactions > .prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
-main .input-group > .input-group-append:not(:last-child) > #addSchedule,
+.input-group > .input-group-append:not(:last-child) > button,
+#interactions .input-group > .append:not(:last-child) > .btn,
+#interactions .input-group > .append:not(:last-child) > button,
+#interactions > .input-group-append:not(:last-child) > .btn,
+#interactions > .input-group-append:not(:last-child) > button,
+#interactions > .append:not(:last-child) > .btn,
+#interactions > .append:not(:last-child) > button,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
+#interactions .input-group > .append:not(:last-child) > .input-group-text,
+#interactions > .input-group-append:not(:last-child) > .input-group-text,
+#interactions > .append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-main .input-group > .input-group-append:last-child > #addSchedule:not(:last-child):not(.dropdown-toggle),
-.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+.input-group > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#interactions .input-group > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#interactions .input-group > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#interactions > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#interactions > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
+#interactions > .append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#interactions > .append:last-child > button:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+#interactions .input-group > .append:last-child > .input-group-text:not(:last-child),
+#interactions > .input-group-append:last-child > .input-group-text:not(:last-child),
+#interactions > .append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn, main .input-group > .input-group-append > #addSchedule,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > button, #interactions .input-group > .append > .btn, #interactions .input-group > .append > button, #interactions > .input-group-append > .btn, #interactions > .input-group-append > button, #interactions > .append > .btn, #interactions > .append > button,
 .input-group > .input-group-append > .input-group-text,
+#interactions .input-group > .append > .input-group-text,
+#interactions > .input-group-append > .input-group-text,
+#interactions > .append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
-main .input-group > .input-group-prepend:not(:first-child) > #addSchedule,
+.input-group > .input-group-prepend:not(:first-child) > button,
+#interactions .input-group > .prepend:not(:first-child) > .btn,
+#interactions .input-group > .prepend:not(:first-child) > button,
+#interactions > .input-group-prepend:not(:first-child) > .btn,
+#interactions > .input-group-prepend:not(:first-child) > button,
+#interactions > .prepend:not(:first-child) > .btn,
+#interactions > .prepend:not(:first-child) > button,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+#interactions .input-group > .prepend:not(:first-child) > .input-group-text,
+#interactions > .input-group-prepend:not(:first-child) > .input-group-text,
+#interactions > .prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-child),
-.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+.input-group > .input-group-prepend:first-child > button:not(:first-child),
+#interactions .input-group > .prepend:first-child > .btn:not(:first-child),
+#interactions .input-group > .prepend:first-child > button:not(:first-child),
+#interactions > .input-group-prepend:first-child > .btn:not(:first-child),
+#interactions > .input-group-prepend:first-child > button:not(:first-child),
+#interactions > .prepend:first-child > .btn:not(:first-child),
+#interactions > .prepend:first-child > button:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+#interactions .input-group > .prepend:first-child > .input-group-text:not(:first-child),
+#interactions > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+#interactions > .prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -4663,7 +4749,7 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
   color: #fff;
 }
 
-.card, main .ScheduleList {
+.card {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4680,17 +4766,17 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
   border-radius: 0.25rem;
 }
 
-.card > hr, main .ScheduleList > hr {
+.card > hr {
   margin-right: 0;
   margin-left: 0;
 }
 
-.card > .list-group:first-child .list-group-item:first-child, .card > .list-group:first-child main ul li:first-child, main ul .card > .list-group:first-child li:first-child, main .card > ul:first-child .list-group-item:first-child, main .card > ul:first-child li:first-child, main .ScheduleList > .list-group:first-child .list-group-item:first-child, main .ScheduleList > .list-group:first-child ul li:first-child, main ul .ScheduleList > .list-group:first-child li:first-child, main .ScheduleList > ul:first-child .list-group-item:first-child, main .ScheduleList > ul:first-child li:first-child {
+.card > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
-.card > .list-group:last-child .list-group-item:last-child, .card > .list-group:last-child main ul li:last-child, main ul .card > .list-group:last-child li:last-child, main .card > ul:last-child .list-group-item:last-child, main .card > ul:last-child li:last-child, main .ScheduleList > .list-group:last-child .list-group-item:last-child, main .ScheduleList > .list-group:last-child ul li:last-child, main ul .ScheduleList > .list-group:last-child li:last-child, main .ScheduleList > ul:last-child .list-group-item:last-child, main .ScheduleList > ul:last-child li:last-child {
+.card > .list-group:last-child .list-group-item:last-child {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
@@ -4723,18 +4809,18 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
   margin-left: 1.25rem;
 }
 
-.card-header, main h2 {
+.card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.card-header:first-child, main h2:first-child {
+.card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 
-.card-header + .list-group .list-group-item:first-child, .card-header + .list-group main ul li:first-child, main ul .card-header + .list-group li:first-child, main .card-header + ul .list-group-item:first-child, main .card-header + ul li:first-child, main h2 + .list-group .list-group-item:first-child, main ul h2 + .list-group li:first-child, main h2 + ul .list-group-item:first-child, main h2 + ul li:first-child {
+.card-header + .list-group .list-group-item:first-child {
   border-top: 0;
 }
 
@@ -4796,7 +4882,7 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
   flex-direction: column;
 }
 
-.card-deck .card, .card-deck main .ScheduleList, main .card-deck .ScheduleList {
+.card-deck .card {
   margin-bottom: 15px;
 }
 
@@ -4810,7 +4896,7 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
     margin-left: -15px;
   }
 
-  .card-deck .card, .card-deck main .ScheduleList, main .card-deck .ScheduleList {
+  .card-deck .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4836,7 +4922,7 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
   flex-direction: column;
 }
 
-.card-group > .card, main .card-group > .ScheduleList {
+.card-group > .card {
   margin-bottom: 15px;
 }
 
@@ -4848,97 +4934,76 @@ main .input-group > .input-group-prepend:first-child > #addSchedule:not(:first-c
     flex-flow: row wrap;
   }
 
-  .card-group > .card, main .card-group > .ScheduleList {
+  .card-group > .card {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-bottom: 0;
   }
 
-  .card-group > .card + .card, main .card-group > .ScheduleList + .card, main .card-group > .card + .ScheduleList, main .card-group > .ScheduleList + .ScheduleList {
+  .card-group > .card + .card {
     margin-left: 0;
     border-left: 0;
   }
 
-  .card-group > .card:first-child, main .card-group > .ScheduleList:first-child {
+  .card-group > .card:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  .card-group > .card:first-child .card-img-top, main .card-group > .ScheduleList:first-child .card-img-top,
-.card-group > .card:first-child .card-header,
-.card-group > .card:first-child main h2,
-main .card-group > .card:first-child h2,
-main .card-group > .ScheduleList:first-child .card-header,
-main .card-group > .ScheduleList:first-child h2 {
+  .card-group > .card:first-child .card-img-top,
+.card-group > .card:first-child .card-header {
     border-top-right-radius: 0;
   }
 
-  .card-group > .card:first-child .card-img-bottom, main .card-group > .ScheduleList:first-child .card-img-bottom,
-.card-group > .card:first-child .card-footer,
-main .card-group > .ScheduleList:first-child .card-footer {
+  .card-group > .card:first-child .card-img-bottom,
+.card-group > .card:first-child .card-footer {
     border-bottom-right-radius: 0;
   }
 
-  .card-group > .card:last-child, main .card-group > .ScheduleList:last-child {
+  .card-group > .card:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  .card-group > .card:last-child .card-img-top, main .card-group > .ScheduleList:last-child .card-img-top,
-.card-group > .card:last-child .card-header,
-.card-group > .card:last-child main h2,
-main .card-group > .card:last-child h2,
-main .card-group > .ScheduleList:last-child .card-header,
-main .card-group > .ScheduleList:last-child h2 {
+  .card-group > .card:last-child .card-img-top,
+.card-group > .card:last-child .card-header {
     border-top-left-radius: 0;
   }
 
-  .card-group > .card:last-child .card-img-bottom, main .card-group > .ScheduleList:last-child .card-img-bottom,
-.card-group > .card:last-child .card-footer,
-main .card-group > .ScheduleList:last-child .card-footer {
+  .card-group > .card:last-child .card-img-bottom,
+.card-group > .card:last-child .card-footer {
     border-bottom-left-radius: 0;
   }
 
-  .card-group > .card:only-child, main .card-group > .ScheduleList:only-child {
+  .card-group > .card:only-child {
     border-radius: 0.25rem;
   }
 
-  .card-group > .card:only-child .card-img-top, main .card-group > .ScheduleList:only-child .card-img-top,
-.card-group > .card:only-child .card-header,
-.card-group > .card:only-child main h2,
-main .card-group > .card:only-child h2,
-main .card-group > .ScheduleList:only-child .card-header,
-main .card-group > .ScheduleList:only-child h2 {
+  .card-group > .card:only-child .card-img-top,
+.card-group > .card:only-child .card-header {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
   }
 
-  .card-group > .card:only-child .card-img-bottom, main .card-group > .ScheduleList:only-child .card-img-bottom,
-.card-group > .card:only-child .card-footer,
-main .card-group > .ScheduleList:only-child .card-footer {
+  .card-group > .card:only-child .card-img-bottom,
+.card-group > .card:only-child .card-footer {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
   }
 
-  .card-group > .card:not(:first-child):not(:last-child):not(:only-child), main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) {
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
     border-radius: 0;
   }
 
-  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top, main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
+  .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
 .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
-main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
 .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-header,
-.card-group > .card:not(:first-child):not(:last-child):not(:only-child) main h2,
-main .card-group > .card:not(:first-child):not(:last-child):not(:only-child) h2,
-main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) .card-header,
-main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) h2,
-.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer,
-main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-child) .card-footer {
+.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer {
     border-radius: 0;
   }
 }
-.card-columns .card, .card-columns main .ScheduleList, main .card-columns .ScheduleList {
+.card-columns .card {
   margin-bottom: 0.75rem;
 }
 
@@ -4952,7 +5017,7 @@ main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-ch
     column-gap: 1.25rem;
   }
 
-  .card-columns .card, .card-columns main .ScheduleList, main .card-columns .ScheduleList {
+  .card-columns .card {
     display: inline-block;
     width: 100%;
   }
@@ -5101,7 +5166,7 @@ main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-ch
   display: none;
 }
 
-.btn .badge, main #addSchedule .badge {
+.btn .badge, button .badge {
   position: relative;
   top: -1px;
 }
@@ -5427,7 +5492,7 @@ main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-ch
   flex: 1;
 }
 
-.list-group, main ul {
+.list-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5456,7 +5521,7 @@ main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-ch
   background-color: #e9ecef;
 }
 
-.list-group-item, main ul li {
+.list-group-item {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
@@ -5465,45 +5530,45 @@ main .card-group > .ScheduleList:not(:first-child):not(:last-child):not(:only-ch
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.list-group-item:first-child, main ul li:first-child {
+.list-group-item:first-child {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
-.list-group-item:last-child, main ul li:last-child {
+.list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
 
-.list-group-item:hover, main ul li:hover, .list-group-item:focus, main ul li:focus {
+.list-group-item:hover, .list-group-item:focus {
   z-index: 1;
   text-decoration: none;
 }
 
-.list-group-item.disabled, main ul li.disabled, .list-group-item:disabled, main ul li:disabled {
+.list-group-item.disabled, .list-group-item:disabled {
   color: #6c757d;
   background-color: #fff;
 }
 
-.list-group-item.active, main ul li.active {
+.list-group-item.active {
   z-index: 2;
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
 
-.list-group-flush .list-group-item, .list-group-flush main ul li, main ul .list-group-flush li, main ul .list-group-item, main ul li {
+.list-group-flush .list-group-item {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
 }
 
-.list-group-flush:first-child .list-group-item:first-child, .list-group-flush:first-child main ul li:first-child, main ul .list-group-flush:first-child li:first-child, main ul:first-child .list-group-item:first-child, main ul:first-child li:first-child {
+.list-group-flush:first-child .list-group-item:first-child {
   border-top: 0;
 }
 
-.list-group-flush:last-child .list-group-item:last-child, .list-group-flush:last-child main ul li:last-child, main ul .list-group-flush:last-child li:last-child, main ul:last-child .list-group-item:last-child, main ul:last-child li:last-child {
+.list-group-flush:last-child .list-group-item:last-child {
   border-bottom: 0;
 }
 
@@ -9582,7 +9647,7 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
   }
 
-  a:not(.btn) {
+  a:not(.btn):not(button) {
     text-decoration: underline;
   }
 
@@ -9661,19 +9726,21 @@ header {
 main {
   padding: 3em;
 }
-main .ScheduleList {
-  width: 18 rem;
-}
-main ul li span {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
+
 .hidden {
   display: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+#week {
+  height: 100%;
+}
+#week .dateContainer {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.dateContainer {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=schedulestyle.css.map */

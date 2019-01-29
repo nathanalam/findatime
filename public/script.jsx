@@ -1,6 +1,6 @@
 var dates = [];
 
-// check if a given date String is valid
+// check if a given date String 'input' is valid
 function isValidDate(input) {
   var arr = input.split('-');
   for(var i = 0; i < 3; i++) {
@@ -12,7 +12,7 @@ function isValidDate(input) {
   return true;
 }
 
-// convert a date into a comma separated string Day, Month Date
+// convert a String date into a comma separated string Day, Month Date
 function dateToString(date) {
     var days = [
       'Monday',
@@ -141,27 +141,32 @@ class Week extends React.Component {
   render() {
     return <div id="schedule">
       <div id="interactions">
-        <button onClick={this.addDay}>Add date</button>
-        <input type="date" id="date"></input>
-        <button>Submit</button>
-        <button onClick={() => {
-          if(this.state.moreOptions) {
-            this.setState({value: this.state.value, moreOptions: false});
-            document.getElementById('more-options').className = "hidden";
-            return;
-          }
-          this.setState({value: this.state.value, moreOptions: true});
-          document.getElementById('more-options').className = "";
-          return;
-        }}>More options</button>
-        <div className="hidden" id="more-options">
-          Begin at:
-          <input type="number" id="min"></input>
-          End at:
-          <input type="number" id="max"></input>
-          Interval (hours):
-          <input type="number" id="interval"></input>
+        <div className="prepend">
+          <button onClick={this.addDay}>Add date</button>
         </div>
+        <input type="date" id="date"></input>
+        <div className="append">
+          <button>Submit</button>
+          <button onClick={() => {
+            if(this.state.moreOptions) {
+              this.setState({value: this.state.value, moreOptions: false});
+              document.getElementById('more-options').className = "hidden";
+              return;
+            }
+            this.setState({value: this.state.value, moreOptions: true});
+            document.getElementById('more-options').className = "";
+            return;
+          }}>More options</button>
+          <div className="hidden" id="more-options">
+            Begin at:
+            <input type="number" id="min"></input>
+            End at:
+            <input type="number" id="max"></input>
+            Interval (hours):
+            <input type="number" id="interval"></input>
+          </div>
+        </div>
+        
       </div>
       <div id="week">
         {this.state.value}
